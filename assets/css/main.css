@@ -1,0 +1,81 @@
+/* All variables */
+:root {
+  --background-image-body: url('../img/images.jpg');
+  --white: #fefefe;
+  --gray-white: #dedede;
+  --black: #130031;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: var(--background-image-body);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------- */
+/* ----------------- usefull classes---------------------- */
+/* ------------------------------------------------------- */
+
+.flex_center_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_center_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+#container {
+  /* container has class .flex_center */
+  flex-direction: column;
+  min-width: 100%;
+}
+#navigation {
+  /* navigation has class .flex_center */
+  background-color: var(--white);
+  padding: 40px;
+  min-width: 100%;
+}
+#wrapper {
+  margin-top: 100px;
+  max-width: 80%;
+}
+#subject{
+  background-color: var(--white);
+}
+
+/* ------------------------------------------------------------------------------- */
+/* --------------------- article - november_uprising styles----------------------- */
+/* ------------------------------------------------------------------------------- */
+
+#november_uprising {
+  /* november_uprising has class .flex_center */
+  flex-direction: column;
+}
+
+#november_uprising h2 {
+  padding: 10px;
+  margin: 10px;
+}
+
+#november_uprising p {
+  padding: 10px;
+  margin: 10px;
+}
+
