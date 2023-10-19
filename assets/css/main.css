@@ -1,15 +1,18 @@
 /* All variables */
 :root {
-  --background-image-body: url('../img/images.jpg');
+  --background-image-body: url('../img/images_2.jpg');
   --white: #fefefe;
-  --gray-white: #dedede;
+  --gray-white: #dededed0;
   --black: #130031;
+  --box-shadow-normal: 3px 3px 10px var(--black);
+  --color-text: #012030
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
 }
 
 body {
@@ -17,6 +20,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 30px
 }
 
 /* ------------------------------------------------------- */
@@ -42,22 +50,24 @@ body {
 /* ------------------------------------------------------- */
 
 #container {
-  /* container has class .flex_center */
+  /* container has class .flex_center_column */
   flex-direction: column;
   min-width: 100%;
 }
 #navigation {
-  /* navigation has class .flex_center */
-  background-color: var(--white);
+  /* navigation has class .flex_center_column */
+  background-color: var(--gray-white);
   padding: 40px;
   min-width: 100%;
+  box-shadow: var(--box-shadow-normal);
 }
 #wrapper {
   margin-top: 100px;
   max-width: 80%;
+  box-shadow: var(--box-shadow-normal);
 }
 #subject{
-  background-color: var(--white);
+  background-color: var(--gray-white);
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -65,17 +75,52 @@ body {
 /* ------------------------------------------------------------------------------- */
 
 #november_uprising {
-  /* november_uprising has class .flex_center */
+  /* november_uprising has class .flex_center_column */
   flex-direction: column;
 }
 
 #november_uprising h2 {
   padding: 10px;
   margin: 10px;
+  font-size: 25px;
 }
 
 #november_uprising p {
-  padding: 10px;
-  margin: 10px;
+  padding: 20px 40px;
 }
 
+#november_uprising ul {
+  padding: 20px 50px;
+}
+
+#november_uprising .quotes {
+  max-width: 50%;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* ---------------------- buttons and content------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+/* reason about november uprising */
+
+#toggle_menu-reason {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+#toggle_menu-reason:hover {
+  font-size: 22px;
+  transition: font-size .1s ease-in-out;
+}
+
+#reason {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
