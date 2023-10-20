@@ -2,7 +2,8 @@
 :root {
   --background-image-body: url('../img/images_2.jpg');
   --white: #fefefe;
-  --gray-white: #dededed0;
+  --gray-white-opacity: #dededed0;
+  --gray-white: #dedede;
   --black: #130031;
   --box-shadow-normal: 3px 3px 10px var(--black);
   --color-text: #012030
@@ -24,6 +25,7 @@ body {
 }
 
 h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px
 }
 
@@ -56,46 +58,75 @@ h1 {
 }
 #navigation {
   /* navigation has class .flex_center_column */
-  background-color: var(--gray-white);
+  background-color: var(--gray-white-opacity);
   padding: 40px;
   min-width: 100%;
   box-shadow: var(--box-shadow-normal);
 }
 #wrapper {
-  margin-top: 100px;
+  margin: 100px 0;
   max-width: 80%;
   box-shadow: var(--box-shadow-normal);
 }
-#subject{
-  background-color: var(--gray-white);
+#subjects{
+  background-color: var(--gray-white-opacity);
 }
 
 /* ------------------------------------------------------------------------------- */
-/* --------------------- article - november_uprising styles----------------------- */
+/* --------------------- articles - november_uprising and great emigrations styles----------------------- */
 /* ------------------------------------------------------------------------------- */
 
 #november_uprising {
   /* november_uprising has class .flex_center_column */
-  flex-direction: column;
 }
 
-#november_uprising h2 {
+.sub h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   margin: 10px;
   font-size: 25px;
 }
 
-#november_uprising p {
+.sub p {
   padding: 20px 40px;
 }
 
-#november_uprising ul {
+.sub ul {
   padding: 20px 50px;
 }
 
-#november_uprising .quotes {
-  max-width: 50%;
+.sub .quotes {
+  max-width: 70%;
+  margin: 50px 0;
 }
+
+#the_great_emigration {
+  /* the_great_emigration has class .flex_center_column */
+}
+
+.list_of_patriots li{
+  margin: 10px;
+}
+
+.patriots {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.patriots_board_class{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray-white);
+  display: none;
+  z-index: 0;
+  min-width: 300px;
+  min-height: 300px;
+}
+
 
 /* ------------------------------------------------------------------------------- */
 /* ---------------------- buttons and content------------------------------------- */
@@ -103,7 +134,7 @@ h1 {
 
 /* reason about november uprising */
 
-#toggle_menu-reason {
+.toggle_button {
   width: 100%;
   border: none;
   background-color: inherit;
@@ -111,7 +142,7 @@ h1 {
   margin: 20px;
   cursor: pointer;
 }
-#toggle_menu-reason:hover {
+.toggle_button:hover {
   font-size: 22px;
   transition: font-size .1s ease-in-out;
 }
@@ -119,8 +150,20 @@ h1 {
 #reason {
   display: none;
 }
+#course_of {
+  display: none;
+}
 
 
 /* ------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------- */
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--gray-white-opacity);
+}
