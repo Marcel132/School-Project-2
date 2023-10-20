@@ -37,6 +37,8 @@ function togglePatriotsInformation() {
   }
 }
 
+// Polish patriots
+
 const patriotButtons = document.querySelectorAll('.patriots');
 const allDivs = document.querySelectorAll('.patriots_board_class');
 
@@ -48,11 +50,11 @@ function hideAllPatriotDivs() {
 
 // Funkcja do obsługi kliknięcia przycisku patriota
 function togglePatriot(patriotDiv) {
-  if (patriotDiv.style.display === 'block') {
+  if (patriotDiv.style.display === 'flex') {
     patriotDiv.style.display = 'none';
   } else {
     hideAllPatriotDivs();
-    patriotDiv.style.display = 'block';
+    patriotDiv.style.display = 'flex';
   }
 }
 
