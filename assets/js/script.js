@@ -38,7 +38,6 @@ function togglePatriotsInformation() {
 }
 
 // Polish patriots
-
 const patriotButtons = document.querySelectorAll('.patriots');
 const allDivs = document.querySelectorAll('.patriots_board_class');
 

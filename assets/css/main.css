@@ -47,6 +47,13 @@ h1 {
   align-items: center;
 }
 
+.flex_start_column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
@@ -73,7 +80,7 @@ h1 {
 }
 
 /* ------------------------------------------------------------------------------- */
-/* --------------------- articles - november_uprising and great emigrations styles----------------------- */
+/* --------------------- articles - november_uprising and great emigration styles----------------------- */
 /* ------------------------------------------------------------------------------- */
 
 #november_uprising {
@@ -91,10 +98,6 @@ h1 {
   padding: 20px 40px;
 }
 
-.sub ul {
-  padding: 20px 50px;
-}
-
 .sub .quotes {
   max-width: 70%;
   margin: 50px 0;
@@ -104,8 +107,11 @@ h1 {
   /* the_great_emigration has class .flex_center_column */
 }
 
+/* Patriots */
 .list_of_patriots li{
-  margin: 10px;
+  /* list_of_patriots has class .flex_start_column */
+  width: 100%;
+  margin: 20px 0;
 }
 
 .patriots {
@@ -116,19 +122,15 @@ h1 {
   text-decoration: underline;
 }
 .patriots_board_class{
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* patriots_board_class has class .flex_center_column */
+  margin: 20px;
   background-color: var(--gray-white);
   display: none;
   z-index: 0;
-  min-width: 80%;
-  max-width: 90%;
+  min-width: 60%;
+  max-width: 80%;
   padding: 10px;
 }
-
-
 /* ------------------------------------------------------------------------------- */
 /* ---------------------- buttons and content------------------------------------- */
 /* ------------------------------------------------------------------------------- */
@@ -167,4 +169,18 @@ h1 {
   width: 100%;
   padding: 30px;
   background-color: var(--gray-white-opacity);
+}
+
+@media only screen and (max-width: 630px) {
+  .sub h2 {
+    font-size: 20px;
+  }
+  * {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  * {
+    font-size: 15px;
+  }
 }
